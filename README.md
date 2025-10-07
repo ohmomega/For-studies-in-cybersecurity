@@ -1,1 +1,1 @@
-# forfigma
+# For studies in cybersecurity
