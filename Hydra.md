@@ -27,6 +27,37 @@ For more information on the options of each protocol in Hydra, you can check the
 
 This shows the importance of using a strong password; if your password is common, doesn’t contain special characters and is not above eight characters, it will be prone to be guessed. A one-hundred-million-password list contains common passwords, so when an out-of-the-box application uses an easy password to log in, change it from the default! CCTV cameras and web frameworks often use admin:password as the default login credentials, which is obviously not strong enough.
 
+## Advantages and limitations of Hydra
+
+Advantages of Hydra
+
+1. Supports multiple protocols/services (SSH, FTP, HTTP forms, SMB, MSSQL, etc.) → Very flexible
+
+2. Fast and can run multi-threaded (-t) to speed up password testing
+
+3. Supports username/password lists (files), username lists (-L), or password lists (-P)
+
+4. Ideal for online demonstrations/penetration tests (immediate results)
+
+5. Easily scriptable/automated (shell scripts)
+
+Hydra's limitations
+
+1. These attacks are online — so they are easily detected (IDS/IPS, rate limits, and logs).
+
+2. Risks account lockouts or potential DoS (Dosage if too many threads are used).
+
+3. Not suitable for MFA (two-factor authentication) or key-based SSH (passwordless).
+
+4. Some websites use CSRF tokens, dynamic form fields, and complex JavaScript, requiring the correct headers, cookies, and CSRF tokens for http-post-forms. Hydra is not easily able to detect these cases.
+
+5. If you want to attack with masked rules, variations, or a very large keyspace offline, it's better to use hashcat:<img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/3f336b6c-e3d1-4b29-971f-762bd8a78172" />
+ / john: <img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/000bee2f-2789-4aa1-9e0a-0a36b83beeb4" />
+ (which cracks hashes offline).
+
+6. Using very large wordlists will require significant time and bandwidth.
+
+
 Installing Hydra
 --
 Hydra is already installed on the AttackBox. You can access it by clicking on the Start AttackBox button.
@@ -146,6 +177,39 @@ Hydra สามารถรันผ่านรายการและ "บร
 สำหรับข้อมูลเพิ่มเติมเกี่ยวกับตัวเลือกของแต่ละโปรโตคอลใน Hydra คุณสามารถดูหน้าเครื่องมือ Kali Hydra ได้
 
 สิ่งนี้แสดงให้เห็นถึงความสำคัญของการใช้รหัสผ่านที่แข็งแกร่ง หากรหัสผ่านของคุณเป็นรหัสผ่านทั่วไป ไม่มีอักขระพิเศษ และไม่เกินแปดตัวอักษร รหัสผ่านนั้นจะถูกเดาได้ง่าย รายการรหัสผ่านหนึ่งร้อยล้านรหัสประกอบด้วยรหัสผ่านทั่วไป ดังนั้นเมื่อแอปพลิเคชันที่ใช้งานได้ทันทีใช้รหัสผ่านที่ง่ายในการเข้าสู่ระบบ ให้เปลี่ยนจากค่าเริ่มต้น! กล้องวงจรปิดและเฟรมเวิร์กเว็บมักใช้ admin:password เป็นข้อมูลรับรองการเข้าสู่ระบบเริ่มต้น ซึ่งเห็นได้ชัดว่าไม่แข็งแกร่งพอ
+
+## ข้อดีและข้อจำกัดของไฮดรา
+
+ข้อดีของไฮดรา
+
+1. รองรับ โปรโตคอล/บริการหลายชนิด (SSH, FTP, HTTP forms, SMB, MSSQL ฯลฯ) → ยืดหยุ่นมาก
+
+2. เร็ว และสามารถรันแบบ multi-threaded (-t) เพื่อเพิ่มความเร็วในการลอง password
+
+3. รองรับ username/password lists (ไฟล์), username list (-L) หรือ password list (-P)
+
+4. เหมาะสำหรับการสาธิต/penetration-test แบบ online (เห็นผลจริงทันที)
+
+5. สามารถ script/automate ได้ง่าย (shell scripts)
+
+ข้อจำกัดของไฮดรา
+
+1. เป็นการโจมตีแบบ online — ดังนั้นจะถูกตรวจจับได้ง่าย (IDS/IPS, rate limit, logs)
+
+2. เสี่ยงล็อกบัญชี หรือทำระบบใช้งานจริงเกิดปัญหา (DoS ถ้าใช้ threads มากเกินไป)
+
+3. ไม่ดีเมื่อมี MFA (two-factor) หรือเมื่อระบบใช้ key-based SSH (ไม่มีรหัสผ่าน)
+
+4. บางเว็บใช้ CSRF token, dynamic form fields, complex JavaScript ทำให้ http-post-form ต้องตั้งค่า headers/cookies/CSRF token ให้ถูก — Hydra จับบางกรณีไม่ได้ง่าย ๆ
+
+5. หากต้องการ attack แบบ masked rules/variations/very large keyspace แบบ offline จะดีกว่าใช้ hashcat: <img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/3f336b6c-e3d1-4b29-971f-762bd8a78172" />
+/john:<img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/000bee2f-2789-4aa1-9e0a-0a36b83beeb4" /> (ซึ่งเป็น offline cracking ของ hash)
+
+6. ถ้าใช้ wordlist ขนาดใหญ่มาก จะใช้เวลาและ bandwidth สูง
+
+
+
+
 
 การติดตั้ง Hydra
 --
