@@ -19,6 +19,9 @@ What is Hydra?
 
 Hydra is a brute force online password cracking program, a quick system login password “hacking” tool.
 
+<img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/dde33686-655d-492c-b69e-0b728cf8a9bf" />
+
+
 Hydra can run through a list and “brute force” some authentication services. Imagine trying to manually guess someone’s password on a particular service (SSH, Web Application Form, FTP or SNMP) - we can use Hydra to run through a password list and speed this process up for us, determining the correct password.
 
 According to its official repository, Hydra supports, i.e., has the ability to brute force the following protocols: “Asterisk, AFP, Cisco AAA, Cisco auth, Cisco enable, CVS, Firebird, FTP, HTTP-FORM-GET, HTTP-FORM-POST, HTTP-GET, HTTP-HEAD, HTTP-POST, HTTP-PROXY, HTTPS-FORM-GET, HTTPS-FORM-POST, HTTPS-GET, HTTPS-HEAD, HTTPS-POST, HTTP-Proxy, ICQ, IMAP, IRC, LDAP, MEMCACHED, MONGODB, MS-SQL, MYSQL, NCP, NNTP, Oracle Listener, Oracle SID, Oracle, PC-Anywhere, PCNFS, POP3, POSTGRES, Radmin, RDP, Rexec, Rlogin, Rsh, RTSP, SAP/R3, SIP, SMB, SMTP, SMTP Enum, SNMP v1+v2+v3, SOCKS5, SSH (v1 and v2), SSHKEY, Subversion, TeamSpeak (TS2), Telnet, VMware-Auth, VNC and XMPP.”
@@ -168,7 +171,10 @@ May the force be with you.
 Hydra คืออะไร
 --
 
-Hydra คือโปรแกรมถอดรหัสรหัสผ่านออนไลน์แบบบรูทฟอร์ซ ซึ่งเป็นเครื่องมือ "แฮ็ก" รหัสผ่านเข้าสู่ระบบอย่างรวดเร็ว
+Hydra คือโปรแกรมถอดรหัสรหัสผ่านออนไลน์แบบบรูทฟอร์ซ ซึ่งเป็นเครื่องมือ "แฮ็ก" รหัสผ่านเข้าสู่ระบบอย่างรวดเร็ว 
+
+<img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/8e4e93b5-7644-4232-b138-97a1bdb9c65d" />
+
 
 Hydra สามารถรันผ่านรายการและ "บรูทฟอร์ซ" บริการตรวจสอบสิทธิ์บางอย่างได้ ลองนึกภาพการลองเดารหัสผ่านของใครบางคนด้วยตนเองในบริการเฉพาะ (SSH, Web Application Form, FTP หรือ SNMP) เราสามารถใช้ Hydra รันผ่านรายการรหัสผ่านและเร่งกระบวนการนี้ให้เรา เพื่อค้นหารหัสผ่านที่ถูกต้อง
 
